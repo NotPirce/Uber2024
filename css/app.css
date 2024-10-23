@@ -6,28 +6,49 @@
   --azul: #16248d;
   --anaranjado: #d86b1d;
   --blanco: #c5cfdc;
-  --celeste: #4371c5;
+  --celeste: #5391ce;
+  --morado: #5912ab;
 }
 html {
-  font-size: 10px;
+  font-size: 65.5%;
 }
 body {
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(
+    to top,
+    var(--celeste) -40%,
+    var(--blanco) 50%
+  );
 }
 
 .titulo_principal {
   color: var(--anaranjado);
   text-align: center;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .navegador_principal {
   display: flex;
-  justify-content: space-around;
-  background-color: var(--celeste);
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    var(--celeste) 33%,
+    var(--amarillo) 100%
+  );
+  border-radius: 1rem;
 }
+
+@media (min-width: 786px) {
+  .navegador_principal {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--celeste);
+  }
+}
+
 .navegador_principal a {
   color: var(--negro);
   text-decoration: none;
@@ -37,11 +58,69 @@ body {
 }
 
 .navegador_principal a:hover {
-  background-color: var(--blanco);
-  color: var(--negro);
+  background-color: var(--negro);
+  color: var(--blanco);
 }
 
 .contenedor {
-  width: 120rem;
+  width: 100%;
   margin: 0 auto;
+  margin-left: 0;
+}
+.transporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background-position: center;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.wrappler {
+  display: flex;
+  flex-direction: column;
+}
+.wrappler a,
+p {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+
+.boton {
+  background-image: linear-gradient(
+    to left,
+    var(--gris) 33%,
+    var(--morado) 100%
+  );
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 90%;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
 }
