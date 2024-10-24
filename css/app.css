@@ -5,7 +5,7 @@
   --gris: #628d9c;
   --azul: #16248d;
   --anaranjado: #d86b1d;
-  --blanco: #c5cfdc;
+  --blanco: #e8c5c5;
   --celeste: #5391ce;
   --morado: #5912ab;
 }
@@ -83,6 +83,12 @@ body {
   margin-top: 1rem;
 }
 
+.contenedor_banner {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
 .wrappler {
   display: flex;
   flex-direction: column;
@@ -107,6 +113,8 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   width: 90%;
+  margin-bottom: 2rem;
+  box-shadow: 7px 9px 8px 0px var(--anaranjado);
 }
 
 .servicios {
@@ -121,6 +129,101 @@ p {
 @media (min-width: 768px) {
   .servicios {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
   }
+}
+.contenedor h2 {
+  font-size: 3rem;
+}
+
+.servicio h3 {
+  font-size: 2rem;
+}
+
+.sombra {
+  background-image: linear-gradient(
+    to right,
+    var(--gris) 40%,
+    var(--amarillo) 90%
+  );
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px 6px var(--negro);
+  margin-bottom: 1rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.wrapplerh2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.formulario {
+  background-image: linear-gradient(
+    to left,
+    var(--celeste) 0%,
+    var(--anaranjado) 90%
+  );
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.labels {
+  margin-bottom: 1rem;
+}
+
+.labels label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: start;
+  display: block;
+}
+
+.input_texto {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.contenedor_formulario {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.boton_enviar {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to left,
+    var(--gris) 33%,
+    var(--morado) 100%
+  );
+
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 50%;
+  margin: 0 auto 2rem auto;
+  box-shadow: 7px 9px 8px 0px var(--negro);
 }
