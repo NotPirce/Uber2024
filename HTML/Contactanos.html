@@ -16,12 +16,67 @@
         <a href="./index.html">Inicio</a>
         <a href="./sobre_nosotros.html">Sobre nosotros</a>
         <a href="./Clientes.html">Clientes</a>
-        <a href="./Contactanos.html">Contactos</a>
+        <a href="./Contactanos.html">Contactanos</a>
       </nav>
     </section>
 
+    <section class="contenedor_banner banner"></section>
+
     <section>
-      <h2>Contactenos</h2>
+      <h2 class="wrapplerh2">Contactanos</h2>
+      <form class="formulario contenedor_formulario">
+        <fieldset>
+          <legend>Completa la informacion</legend>
+          <div>
+            <div class="labels">
+              <label for="txtNombre">Nombre completo</label>
+              <input
+                class="input_texto"
+                type="text"
+                name="txtNombre"
+                id="txtNombre"
+                placeholder="Escribe tu nombre"
+              />
+            </div>
+            <div class="labels">
+              <label for="txtTelefono">Telefono</label>
+              <input
+                class="input_texto"
+                type="tel"
+                name="txtTelefono"
+                id="txtTelefono"
+                placeholder="Escribe tu numero de telefono"
+              />
+            </div>
+            <div class="labels">
+              <label for="txtEmail"> Correo electronico</label>
+              <input
+                class="input_texto"
+                type="email"
+                name="txtEmail"
+                id="txtEmail"
+                placeholder="Escribe tu correo"
+              />
+            </div>
+            <div class="labels">
+              <label for="txtMensaje">Mensaje</label>
+              <textarea
+                class="input_texto"
+                name="txtMensaje"
+                id="txtMensaje"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <div>
+            <input class="boton_enviar" type="submit" value="Enviar" />
+          </div>
+        </fieldset>
+      </form>
     </section>
+
+    <footer class="footer">
+      <p>Todos los derechos reservados. HEMM</p>
+    </footer>
   </body>
 </html>
