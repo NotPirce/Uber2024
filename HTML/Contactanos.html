@@ -41,6 +41,8 @@
                 id="txtNombre"
                 placeholder="Escribe tu nombre"
                 required
+                minlength="3"
+                maxlength="40"
               />
             </div>
 
@@ -53,6 +55,8 @@
                 id="txtTelefono"
                 placeholder="Escribe tu número de teléfono"
                 required
+                pattern="^\d{8}$"
+                title="Debes ingresar exactamente 8 dígitos numéricos."
               />
             </div>
 
@@ -68,7 +72,7 @@
               />
             </div>
 
-            <div class="has-validation labels">
+            <div class="labels">
               <label for="txtMensaje">Mensaje</label>
               <textarea
                 class="input_texto"
@@ -76,6 +80,7 @@
                 id="txtMensaje"
                 rows="5"
                 required
+                maxlength="150"
               ></textarea>
             </div>
           </div>
