@@ -23,10 +23,14 @@
     <section class="contenedor_banner banner"></section>
 
     <section>
-      <h2 class="wrapplerh2">Contactanos</h2>
+      <h2 class="wrapplerh2">Contáctanos</h2>
+    </section>
+
+    <section>
       <form class="formulario contenedor_formulario">
         <fieldset>
-          <legend>Completa la informacion</legend>
+          <legend>Completa la información</legend>
+
           <div>
             <div class="labels">
               <label for="txtNombre">Nombre completo</label>
@@ -36,38 +40,46 @@
                 name="txtNombre"
                 id="txtNombre"
                 placeholder="Escribe tu nombre"
+                required
               />
             </div>
+
             <div class="labels">
-              <label for="txtTelefono">Telefono</label>
+              <label for="txtTelefono">Teléfono</label>
               <input
                 class="input_texto"
                 type="tel"
                 name="txtTelefono"
                 id="txtTelefono"
-                placeholder="Escribe tu numero de telefono"
+                placeholder="Escribe tu número de teléfono"
+                required
               />
             </div>
+
             <div class="labels">
-              <label for="txtEmail"> Correo electronico</label>
+              <label for="txtEmail">Correo electrónico</label>
               <input
                 class="input_texto"
                 type="email"
                 name="txtEmail"
                 id="txtEmail"
                 placeholder="Escribe tu correo"
+                required
               />
             </div>
-            <div class="labels">
+
+            <div class="has-validation labels">
               <label for="txtMensaje">Mensaje</label>
               <textarea
                 class="input_texto"
                 name="txtMensaje"
                 id="txtMensaje"
                 rows="5"
+                required
               ></textarea>
             </div>
           </div>
+
           <div>
             <input class="boton_enviar" type="submit" value="Enviar" />
           </div>
